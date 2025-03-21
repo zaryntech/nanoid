@@ -10,8 +10,9 @@
 -spec generate() -> bitstring().
 generate() ->
     generate(
-    <<"_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ#$%@*^>][<?}{!">>,
-    61).
+        <<"_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ">>,  
+        92
+    ).
 
 -spec generate(bitstring(), integer()) -> bitstring().
 generate(Alphabet, Size) when Size > 0 ->
